@@ -1,3 +1,18 @@
-nimcache/
-nimblecache/
-htmldocs/
+# Ignore all
+tests/t_*
+example/*
+
+# Unignore all with extensions
+!example/*.*
+!tests/t_*.*
+!benchmarks/*.*
+
+*.js
+output.png
+
+.DS_Store
+callgrind.out.*
+profile_results.txt
+docs
+*.idx
+*.css
