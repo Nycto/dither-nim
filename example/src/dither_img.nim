@@ -4,7 +4,7 @@ type
     Palette = ref object
         colors: seq[ColorRGBX]
 
-    DitherModes {.pure.} = enum Bayer4x4
+    DitherModes {.pure.} = enum Bayer4x4, Bayer8x8
 
 proc nearestColor(palette: Palette, color: ColorRGBX): ColorRGBX =
     var currentDistance: float32 = high(float32)
@@ -40,5 +40,6 @@ for param in 3..paramCount():
 
 case parseEnum[DitherModes](paramStr(2))
 of DitherModes.Bayer4x4: img.orderedDither(output, palette, Bayer4x4)
+of DitherModes.Bayer8x8: img.orderedDither(output, palette, Bayer8x8)
 
 output.writeFile("output.png")
