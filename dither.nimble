@@ -9,4 +9,4 @@ srcDir        = "src"
 
 # Dependencies
 
-requires "nim >= 1.6.14"
+requires "nim >= 1.6.14", "chroma >= 0.2.7"

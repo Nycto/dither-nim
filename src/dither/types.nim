@@ -14,3 +14,6 @@ type
     OutputImage*[Color] = concept var i
         ## An image that pixels can be written to
         i.setPixel(int, int, Color)
+
+    DitherModes* {.pure.} = enum Bayer4x4, Bayer8x8
+        ## A list of various available and standard dithering algorithms

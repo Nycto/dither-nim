@@ -1,2 +1,2 @@
-import dither/[ordered, types]
-export ordered, types
+import dither/[ordered, types, palette]
+export ordered, types, palette
