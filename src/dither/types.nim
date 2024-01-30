@@ -1,14 +1,16 @@
-
 type
-    Palette*[Pixel] = concept p
-        p.nearestColor(Pixel) is Pixel
+    Palette*[Color] = concept p
+        ## A set of available colors
+        p.nearestColor(Color) is Color
         p.approxMaxColorDistance is int
 
-    InputImage*[Pixel] = concept i
+    InputImage*[Color] = concept i
+        ## An image from which to read colors
         i.width is SomeInteger
         i.height is SomeInteger
-        i.getPixel(int, int) is Pixel
-        (Pixel + int) is Pixel
+        i.getPixel(int, int) is Color
+        (Color + int) is Color
 
-    OutputImage*[Pixel] = concept var i
-        i.setPixel(int, int, Pixel)
+    OutputImage*[Color] = concept var i
+        ## An image that pixels can be written to
+        i.setPixel(int, int, Color)
