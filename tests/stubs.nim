@@ -20,6 +20,8 @@ proc getPixel*[W: static int, T](image: TestInput[W, T]; x, y: int): T = image.p
 proc nearestColor*(palette: BlackAndWhite, color: int): int =
     return if color > 128: 255 else: 0
 
+proc approxMaxColorDistance*(palette: BlackAndWhite): int = 128
+
 proc newOutput*[N: static int, T](): auto = OutputImage[N, T](pixels: newSeq[array[N, T]]())
 
 proc setPixel*[N: static int, T](img: var OutputImage[N, T]; x, y: int, color: T) =

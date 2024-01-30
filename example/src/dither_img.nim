@@ -8,6 +8,8 @@ let white = rgbx(255, 255, 255, 255)
 proc nearestColor(palette: BlackAndWhite, color: ColorRGBX): ColorRGBX =
     result = if distance(color, black) > distance(color, white): white else: black
 
+proc approxMaxColorDistance(palette: BlackAndWhite): int = 128
+
 let img = readImage(paramStr(1))
 
 var output = newImage(img.width, img.height)

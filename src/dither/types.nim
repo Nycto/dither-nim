@@ -2,6 +2,7 @@
 type
     Palette*[Pixel] = concept p
         p.nearestColor(Pixel) is Pixel
+        p.approxMaxColorDistance is int
 
     InputImage*[Pixel] = concept i
         i.width is SomeInteger
