@@ -2,6 +2,11 @@ import types
 
 type ThresholdMap*[N: static int] = array[N, array[N, int]]
 
+const Bayer2x2*: ThresholdMap[2]  = [
+    [ 0, 2 ],
+    [ 3, 1 ]
+]
+
 const Bayer4x4*: ThresholdMap[4]  = [
     [ 1,  9,  3,  11 ],
     [ 13, 5,  15, 7  ],

@@ -6,6 +6,26 @@ proc intArray[N: static int](values: Slice[int]): array[N, int] =
         result[i] = round(increment * i.float).toInt
 
 suite "Ordered dithering":
+
+    test "Can perform 2x2 dithering":
+        var output = newOutput[10, int]()
+
+        let img = newInput[10, int](
+            intArray[10](0..255),
+            intArray[10](0..255),
+            intArray[10](0..255),
+            intArray[10](0..255),
+        )
+
+        img.orderedDither(output, BlackAndWhite(), Bayer2x2)
+
+        check(output == [
+            [ 0, 0, 0, 255, 0, 255, 255, 255, 255, 255],
+            [ 0, 0, 255, 0, 255, 255, 255, 255, 255, 255],
+            [ 0, 0, 0, 255, 0, 255, 255, 255, 255, 255],
+            [ 0, 0, 255, 0, 255, 255, 255, 255, 255, 255]
+        ])
+
     test "Can perform 4x4 dithering":
         var output = newOutput[20, int]()
 
