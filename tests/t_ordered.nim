@@ -1,9 +1,4 @@
-import unittest, dither, stubs, math, sequtils
-
-proc intArray[N: static int](values: Slice[int]): array[N, int] =
-    let increment = (values.b - values.a) / (N - 1)
-    for i in 0..<N:
-        result[i] = round(increment * i.float).toInt
+import unittest, dither, stubs, sequtils
 
 suite "Ordered dithering":
 

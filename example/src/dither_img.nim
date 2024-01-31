@@ -14,5 +14,6 @@ case parseEnum[DitherModes](paramStr(2))
 of DitherModes.Bayer2x2: img.orderedDither(output, palette, Bayer2x2)
 of DitherModes.Bayer4x4: img.orderedDither(output, palette, Bayer4x4)
 of DitherModes.Bayer8x8: img.orderedDither(output, palette, Bayer8x8)
+of DitherModes.FloydSteinberg: img.errorDiffusionDither(output, palette, ColorQuantizer, FloydSteinberg)
 
 output.writeFile("output.png")
