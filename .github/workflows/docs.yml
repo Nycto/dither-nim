@@ -2,7 +2,7 @@ name: Documentation Deploy
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   docs:
     concurrency: ci-${{ github.ref }}
