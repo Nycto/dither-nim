@@ -1,2 +1,2 @@
-import dither/[ordered, types, palette, diffusion, quantizer]
-export ordered, types, palette, diffusion, quantizer
+import dither/[ordered, types, palette, diffusion, quantizer, matrix]
+export ordered, types, palette, diffusion, quantizer, matrix
