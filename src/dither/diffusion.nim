@@ -30,6 +30,12 @@ const JarvisJudiceNinke*: DiffusionMatrix[3, 5, 2] = [
     [ 1, 3, 5, 3, 1 ]
 ]
 
+const Stucki*: DiffusionMatrix[3, 5, 2] = [
+    [ 0, 0, 0, 8, 4 ],
+    [ 2, 4, 8, 4, 2 ],
+    [ 1, 2, 4, 2, 1 ]
+]
+
 proc rows*[Rows: static int, Cols: static int, Inset: static int](matrix: DiffusionMatrix[Rows, Cols, Inset]): int =
     ## The number of rows in this matrix
     return Rows
