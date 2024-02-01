@@ -15,5 +15,5 @@ type
         ## An image that pixels can be written to
         i.setPixel(int, int, Color)
 
-    DitherModes* {.pure.} = enum Bayer2x2, Bayer4x4, Bayer8x8, FloydSteinberg
+    DitherModes* {.pure.} = enum Bayer2x2, Bayer4x4, Bayer8x8, FloydSteinberg, JarvisJudiceNinke
         ## A list of various available and standard dithering algorithms

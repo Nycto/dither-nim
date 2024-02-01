@@ -24,6 +24,12 @@ const FloydSteinberg*: DiffusionMatrix[2, 3, 1] = [
     [ 3, 5, 1 ]
 ]
 
+const JarvisJudiceNinke*: DiffusionMatrix[3, 5, 2] = [
+    [ 0, 0, 0, 7, 5 ],
+    [ 3, 5, 7, 5, 3 ],
+    [ 1, 3, 5, 3, 1 ]
+]
+
 proc rows*[Rows: static int, Cols: static int, Inset: static int](matrix: DiffusionMatrix[Rows, Cols, Inset]): int =
     ## The number of rows in this matrix
     return Rows
