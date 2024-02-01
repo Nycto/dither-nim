@@ -28,6 +28,13 @@ const Stucki* = matrix[3, 5](2, 42, [
 ])
     ## Stucki dithering
 
+const Atkinson* = matrix[3, 4](1, 8, [
+    [ 0, 0, 1, 1 ],
+    [ 1, 1, 1, 0 ],
+    [ 0, 1, 0, 0 ]
+])
+    ## https://en.wikipedia.org/wiki/Atkinson_dithering
+
 proc rows*[Rows: static int, Cols: static int](matrix: DiffusionMatrix[Rows, Cols]): int =
     ## The number of rows in this matrix
     return Rows

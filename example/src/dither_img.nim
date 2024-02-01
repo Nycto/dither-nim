@@ -17,5 +17,6 @@ of DitherModes.Bayer8x8: img.orderedDither(output, palette, Bayer8x8)
 of DitherModes.FloydSteinberg: img.errorDiffusionDither(output, palette, ColorQuantizer, FloydSteinberg)
 of DitherModes.JarvisJudiceNinke: img.errorDiffusionDither(output, palette, ColorQuantizer, JarvisJudiceNinke)
 of DitherModes.Stucki: img.errorDiffusionDither(output, palette, ColorQuantizer, Stucki)
+of DitherModes.Atkinson: img.errorDiffusionDither(output, palette, ColorQuantizer, Atkinson)
 
 output.writeFile("output.png")
