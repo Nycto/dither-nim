@@ -70,8 +70,36 @@ window.addEventListener('DOMContentLoaded', main);
 <div class="document" id="documentId">
   <div class="container">
     <h1 class="title">Index</h1>
-    Modules: <a href="dither/ordered.html">dither/ordered</a>, <a href="dither/types.html">dither/types</a>.<br/><p /><h2>API symbols</h2>
-<dl><dt><a name="Bayer4x4" href="#Bayer4x4"><span>Bayer4x4:</span></a></dt><dd><ul class="simple">
+    Modules: <a href="dither/diffusion.html">dither/diffusion</a>, <a href="dither/matrix.html">dither/matrix</a>, <a href="dither/ordered.html">dither/ordered</a>, <a href="dither/palette.html">dither/palette</a>, <a href="dither/quantizer.html">dither/quantizer</a>, <a href="dither/types.html">dither/types</a>.<br/><p /><h2>API symbols</h2>
+<dl><dt><a name="%60%2A%60" href="#%60%2A%60"><span>`*`:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="quantizer: `*`(error: ColorQuantizeError; scalar: int): ColorQuantizeError" href="dither/quantizer.html#%2A%2CColorQuantizeError%2Cint">quantizer: `*`(error: ColorQuantizeError; scalar: int): ColorQuantizeError</a></li>
+          </ul></dd>
+<dt><a name="%60%2B%60" href="#%60%2B%60"><span>`+`:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="palette: `+`(color: ColorRGBX; scalar: int): ColorRGBX" href="dither/palette.html#%2B%2CColorRGBX%2Cint">palette: `+`(color: ColorRGBX; scalar: int): ColorRGBX</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="quantizer: `+`(a, b: ColorQuantizeError): ColorQuantizeError" href="dither/quantizer.html#%2B%2CColorQuantizeError%2CColorQuantizeError">quantizer: `+`(a, b: ColorQuantizeError): ColorQuantizeError</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="quantizer: `+`(color: ColorRGBX; error: ColorQuantizeError): ColorRGBX" href="dither/quantizer.html#%2B%2CColorRGBX%2CColorQuantizeError">quantizer: `+`(color: ColorRGBX; error: ColorQuantizeError): ColorRGBX</a></li>
+          </ul></dd>
+<dt><a name="%60div%60" href="#%60div%60"><span>`div`:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="quantizer: `div`(error: ColorQuantizeError; scalar: int): ColorQuantizeError" href="dither/quantizer.html#div%2CColorQuantizeError%2Cint">quantizer: `div`(error: ColorQuantizeError; scalar: int): ColorQuantizeError</a></li>
+          </ul></dd>
+<dt><a name="approxMaxColorDistance" href="#approxMaxColorDistance"><span>approxMaxColorDistance:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="palette: approxMaxColorDistance(palette: FixedPalette): int" href="dither/palette.html#approxMaxColorDistance%2CFixedPalette">palette: approxMaxColorDistance(palette: FixedPalette): int</a></li>
+          </ul></dd>
+<dt><a name="Atkinson" href="#Atkinson"><span>Atkinson:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="matrix: Atkinson" href="dither/matrix.html#Atkinson">matrix: Atkinson</a></li>
+          </ul></dd>
+<dt><a name="Bayer2x2" href="#Bayer2x2"><span>Bayer2x2:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="ordered: Bayer2x2" href="dither/ordered.html#Bayer2x2">ordered: Bayer2x2</a></li>
+          </ul></dd>
+<dt><a name="Bayer4x4" href="#Bayer4x4"><span>Bayer4x4:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="ordered: Bayer4x4" href="dither/ordered.html#Bayer4x4">ordered: Bayer4x4</a></li>
           </ul></dd>
@@ -79,9 +107,63 @@ window.addEventListener('DOMContentLoaded', main);
 <li><a class="reference external"
           data-doc-search-tag="ordered: Bayer8x8" href="dither/ordered.html#Bayer8x8">ordered: Bayer8x8</a></li>
           </ul></dd>
+<dt><a name="Burkes" href="#Burkes"><span>Burkes:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="matrix: Burkes" href="dither/matrix.html#Burkes">matrix: Burkes</a></li>
+          </ul></dd>
+<dt><a name="ColorQuantizer" href="#ColorQuantizer"><span>ColorQuantizer:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="quantizer: ColorQuantizer" href="dither/quantizer.html#ColorQuantizer">quantizer: ColorQuantizer</a></li>
+          </ul></dd>
+<dt><a name="columns" href="#columns"><span>columns:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="matrix: columns[Rows: static int; Cols: static int](matrix: DiffusionMatrix[Rows, Cols]): int" href="dither/matrix.html#columns%2CDiffusionMatrix%5BRows%2CCols%5D">matrix: columns[Rows: static int; Cols: static int](matrix: DiffusionMatrix[Rows, Cols]): int</a></li>
+          </ul></dd>
+<dt><a name="DiffusionMatrix" href="#DiffusionMatrix"><span>DiffusionMatrix:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="matrix: DiffusionMatrix" href="dither/matrix.html#DiffusionMatrix">matrix: DiffusionMatrix</a></li>
+          </ul></dd>
+<dt><a name="Diffusor" href="#Diffusor"><span>Diffusor:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="diffusion: Diffusor" href="dither/diffusion.html#Diffusor">diffusion: Diffusor</a></li>
+          </ul></dd>
+<dt><a name="DitherModes" href="#DitherModes"><span>DitherModes:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="types: DitherModes" href="dither/types.html#DitherModes">types: DitherModes</a></li>
+          </ul></dd>
+<dt><a name="errorDiffusionDither" href="#errorDiffusionDither"><span>errorDiffusionDither:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="diffusion: errorDiffusionDither[C, E](input: InputImage[C]; output: var OutputImage[C];
+                           palette: Palette[C]; quantizer: Quantizer[C, E];
+                           diffusor: Diffusor)" href="dither/diffusion.html#errorDiffusionDither%2CInputImage%5BC%5D%2COutputImage%5BC%5D%2CPalette%5BC%5D%2CQuantizer%5BC%2CE%5D%2CDiffusor">diffusion: errorDiffusionDither[C, E](input: InputImage[C]; output: var OutputImage[C];
+                           palette: Palette[C]; quantizer: Quantizer[C, E];
+                           diffusor: Diffusor)</a></li>
+          </ul></dd>
+<dt><a name="FixedPalette" href="#FixedPalette"><span>FixedPalette:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="palette: FixedPalette" href="dither/palette.html#FixedPalette">palette: FixedPalette</a></li>
+          </ul></dd>
+<dt><a name="FloydSteinberg" href="#FloydSteinberg"><span>FloydSteinberg:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="matrix: FloydSteinberg" href="dither/matrix.html#FloydSteinberg">matrix: FloydSteinberg</a></li>
+          </ul></dd>
 <dt><a name="InputImage" href="#InputImage"><span>InputImage:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="types: InputImage" href="dither/types.html#InputImage">types: InputImage</a></li>
+          </ul></dd>
+<dt><a name="JarvisJudiceNinke" href="#JarvisJudiceNinke"><span>JarvisJudiceNinke:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="matrix: JarvisJudiceNinke" href="dither/matrix.html#JarvisJudiceNinke">matrix: JarvisJudiceNinke</a></li>
+          </ul></dd>
+<dt><a name="nearestColor" href="#nearestColor"><span>nearestColor:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="palette: nearestColor(palette: FixedPalette; color: ColorRGBX): ColorRGBX" href="dither/palette.html#nearestColor%2CFixedPalette%2CColorRGBX">palette: nearestColor(palette: FixedPalette; color: ColorRGBX): ColorRGBX</a></li>
+          </ul></dd>
+<dt><a name="numerator" href="#numerator"><span>numerator:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="matrix: numerator[Rows: static int; Cols: static int](
+    matrix: DiffusionMatrix[Rows, Cols]; row, column: int): int" href="dither/matrix.html#numerator%2CDiffusionMatrix%5BRows%2CCols%5D%2Cint%2Cint">matrix: numerator[Rows: static int; Cols: static int](
+    matrix: DiffusionMatrix[Rows, Cols]; row, column: int): int</a></li>
           </ul></dd>
 <dt><a name="orderedDither" href="#orderedDither"><span>orderedDither:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -93,9 +175,29 @@ window.addEventListener('DOMContentLoaded', main);
 <li><a class="reference external"
           data-doc-search-tag="types: OutputImage" href="dither/types.html#OutputImage">types: OutputImage</a></li>
           </ul></dd>
+<dt><a name="palette" href="#palette"><span>palette:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="palette: palette(colors: varargs[ColorRGBX]): FixedPalette" href="dither/palette.html#palette%2Cvarargs%5BColorRGBX%5D">palette: palette(colors: varargs[ColorRGBX]): FixedPalette</a></li>
+          </ul></dd>
 <dt><a name="Palette" href="#Palette"><span>Palette:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="types: Palette" href="dither/types.html#Palette">types: Palette</a></li>
+          </ul></dd>
+<dt><a name="quantizeError" href="#quantizeError"><span>quantizeError:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="quantizer: quantizeError(q: ColorQuantizeObj; a, b: ColorRGBX): ColorQuantizeError" href="dither/quantizer.html#quantizeError%2CColorQuantizeObj%2CColorRGBX%2CColorRGBX">quantizer: quantizeError(q: ColorQuantizeObj; a, b: ColorRGBX): ColorQuantizeError</a></li>
+          </ul></dd>
+<dt><a name="Quantizer" href="#Quantizer"><span>Quantizer:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="diffusion: Quantizer" href="dither/diffusion.html#Quantizer">diffusion: Quantizer</a></li>
+          </ul></dd>
+<dt><a name="rows" href="#rows"><span>rows:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="matrix: rows[Rows: static int; Cols: static int](matrix: DiffusionMatrix[Rows, Cols]): int" href="dither/matrix.html#rows%2CDiffusionMatrix%5BRows%2CCols%5D">matrix: rows[Rows: static int; Cols: static int](matrix: DiffusionMatrix[Rows, Cols]): int</a></li>
+          </ul></dd>
+<dt><a name="Stucki" href="#Stucki"><span>Stucki:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="matrix: Stucki" href="dither/matrix.html#Stucki">matrix: Stucki</a></li>
           </ul></dd>
 <dt><a name="ThresholdMap" href="#ThresholdMap"><span>ThresholdMap:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -106,7 +208,7 @@ window.addEventListener('DOMContentLoaded', main);
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br/>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2024-02-01 03:17:27 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2024-02-01 04:57:46 UTC</small>
       </div>
     </div>
   </div>

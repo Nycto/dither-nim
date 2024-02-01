@@ -1,0 +1,9 @@
+DiffusionMatrix	dither/matrix.html#DiffusionMatrix	matrix: DiffusionMatrix	
+FloydSteinberg	dither/matrix.html#FloydSteinberg	matrix: FloydSteinberg	
+JarvisJudiceNinke	dither/matrix.html#JarvisJudiceNinke	matrix: JarvisJudiceNinke	
+Stucki	dither/matrix.html#Stucki	matrix: Stucki	
+Atkinson	dither/matrix.html#Atkinson	matrix: Atkinson	
+Burkes	dither/matrix.html#Burkes	matrix: Burkes	
+rows	dither/matrix.html#rows,DiffusionMatrix[Rows,Cols]	matrix: rows[Rows: static int; Cols: static int](matrix: DiffusionMatrix[Rows, Cols]): int	
+columns	dither/matrix.html#columns,DiffusionMatrix[Rows,Cols]	matrix: columns[Rows: static int; Cols: static int](matrix: DiffusionMatrix[Rows, Cols]): int	
+numerator	dither/matrix.html#numerator,DiffusionMatrix[Rows,Cols],int,int	matrix: numerator[Rows: static int; Cols: static int](\n    matrix: DiffusionMatrix[Rows, Cols]; row, column: int): int	

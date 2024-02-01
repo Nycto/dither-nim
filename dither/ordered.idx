@@ -1,4 +1,5 @@
 ThresholdMap	dither/ordered.html#ThresholdMap	ordered: ThresholdMap	
+Bayer2x2	dither/ordered.html#Bayer2x2	ordered: Bayer2x2	
 Bayer4x4	dither/ordered.html#Bayer4x4	ordered: Bayer4x4	
 Bayer8x8	dither/ordered.html#Bayer8x8	ordered: Bayer8x8	
 orderedDither	dither/ordered.html#orderedDither,InputImage[P],OutputImage[P],Palette[P],ThresholdMap[N]	ordered: orderedDither[N, P](input: InputImage[P]; output: var OutputImage[P];\n                    palette: Palette[P]; thresholds: ThresholdMap[N])	

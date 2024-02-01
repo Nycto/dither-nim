@@ -1,0 +1,5 @@
+FixedPalette	dither/palette.html#FixedPalette	palette: FixedPalette	
+palette	dither/palette.html#palette,varargs[ColorRGBX]	palette: palette(colors: varargs[ColorRGBX]): FixedPalette	
+nearestColor	dither/palette.html#nearestColor,FixedPalette,ColorRGBX	palette: nearestColor(palette: FixedPalette; color: ColorRGBX): ColorRGBX	
+approxMaxColorDistance	dither/palette.html#approxMaxColorDistance,FixedPalette	palette: approxMaxColorDistance(palette: FixedPalette): int	
+`+`	dither/palette.html#+,ColorRGBX,int	palette: `+`(color: ColorRGBX; scalar: int): ColorRGBX	

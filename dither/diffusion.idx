@@ -1,0 +1,3 @@
+Quantizer	dither/diffusion.html#Quantizer	diffusion: Quantizer	
+Diffusor	dither/diffusion.html#Diffusor	diffusion: Diffusor	
+errorDiffusionDither	dither/diffusion.html#errorDiffusionDither,InputImage[C],OutputImage[C],Palette[C],Quantizer[C,E],Diffusor	diffusion: errorDiffusionDither[C, E](input: InputImage[C]; output: var OutputImage[C];\n                           palette: Palette[C]; quantizer: Quantizer[C, E];\n                           diffusor: Diffusor)	
