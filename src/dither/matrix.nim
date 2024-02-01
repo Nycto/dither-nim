@@ -35,6 +35,12 @@ const Atkinson* = matrix[3, 4](1, 8, [
 ])
     ## https://en.wikipedia.org/wiki/Atkinson_dithering
 
+const Burkes* = matrix[2, 5](2, 32, [
+    [ 0, 0, 0, 8, 4 ],
+    [ 2, 4, 8, 4, 2 ],
+])
+    ## Burkes dithering
+
 proc rows*[Rows: static int, Cols: static int](matrix: DiffusionMatrix[Rows, Cols]): int =
     ## The number of rows in this matrix
     return Rows
