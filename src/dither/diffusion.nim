@@ -38,11 +38,6 @@ iterator relativeNumerators(diffusor: Diffusor; x, y, maxX, maxY: int): tuple[x,
         if errorX >= 0 and errorX < maxX and errorY >= 0 and errorY < maxY:
             yield (errorX, errorY, numerator)
 
-proc calculateDenominator(diffusor: Diffusor): int =
-    ## Sum all the values in a diffusion matrix
-    for (_, _, numerator) in diffusor.numerators:
-        result += numerator
-
 proc slot[E](errors: var seq[seq[E]]; x, y: int): var E = errors[y mod errors.len][x]
 
 proc errorDiffusionDither*[C, E](
