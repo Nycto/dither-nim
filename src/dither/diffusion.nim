@@ -14,6 +14,7 @@ type
         d.rows is int
         d.columns is int
         d.inset is int
+        d.denominator
         d.numerator(int, int) is int
 
 iterator coords(diffusor: Diffusor): tuple[row, column: int] =
@@ -54,7 +55,7 @@ proc errorDiffusionDither*[C, E](
     ## Implementation of error diffusion based dithering
     ## https://tannerhelland.com/2012/12/28/dithering-eleven-algorithms-source-code.html
 
-    let errorDenominator = diffusor.calculateDenominator
+    let errorDenominator = diffusor.denominator
 
     # Allocate some sequences that allow us to store the error data for pixels that haven't been processed yet
     var errors = newSeq[seq[E]](diffusor.rows)
