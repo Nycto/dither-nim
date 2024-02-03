@@ -17,14 +17,16 @@ proc orderedDither*[P](
     ## * https://bisqwit.iki.fi/story/howto/dither/jy/
 
     let maxThresholdMap = thresholds.maxThreshold
+    let halfMax = (maxThresholdMap div 2) + 1
 
     # The likely distance between colors in the palette
     let threshold = palette.approxMaxColorDistance
 
     for y in 0..<input.height:
         for x in 0..<input.width:
-            let factor = thresholds.threshold(x, y)
+            let factor = thresholds.threshold(x, y) - halfMax
             let actualPixel = input.getPixel(x, y)
-            let adjustdPixel = actualPixel + (factor * threshold div maxThresholdMap)
+            let delta = factor * threshold div maxThresholdMap
+            let adjustdPixel = actualPixel + delta
             let final = palette.nearestColor(adjustdPixel)
             output.setPixel(x, y, final)
