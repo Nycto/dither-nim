@@ -1,5 +1,8 @@
 FixedPalette	dither/palette.html#FixedPalette	palette: FixedPalette	
+BlackAndWhiteIntPalette	dither/palette.html#BlackAndWhiteIntPalette	palette: BlackAndWhiteIntPalette	
 palette	dither/palette.html#palette,varargs[ColorRGBX]	palette: palette(colors: varargs[ColorRGBX]): FixedPalette	
 nearestColor	dither/palette.html#nearestColor,FixedPalette,ColorRGBX	palette: nearestColor(palette: FixedPalette; color: ColorRGBX): ColorRGBX	
 approxMaxColorDistance	dither/palette.html#approxMaxColorDistance,FixedPalette	palette: approxMaxColorDistance(palette: FixedPalette): int	
 `+`	dither/palette.html#+,ColorRGBX,int	palette: `+`(color: ColorRGBX; scalar: int): ColorRGBX	
+nearestColor	dither/palette.html#nearestColor,BlackAndWhiteIntPaletteObj,int	palette: nearestColor(palette: BlackAndWhiteIntPaletteObj; color: int): int	
+approxMaxColorDistance	dither/palette.html#approxMaxColorDistance,BlackAndWhiteIntPaletteObj	palette: approxMaxColorDistance(palette: BlackAndWhiteIntPaletteObj): int	

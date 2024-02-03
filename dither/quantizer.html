@@ -103,6 +103,8 @@ window.addEventListener('DOMContentLoaded', main);
   <ul class="simple simple-toc-section">
       <li><a class="reference" href="#ColorQuantizer"
     title="ColorQuantizer = ()">ColorQuantizer</a></li>
+  <li><a class="reference" href="#IntQuantizer"
+    title="IntQuantizer = ()">IntQuantizer</a></li>
 
   </ul>
 </li>
@@ -129,6 +131,8 @@ window.addEventListener('DOMContentLoaded', main);
   <ul class="simple nested-toc-section">quantizeError
       <li><a class="reference" href="#quantizeError%2CColorQuantizeObj%2CColorRGBX%2CColorRGBX"
     title="quantizeError(q: ColorQuantizeObj; a, b: ColorRGBX): ColorQuantizeError">quantizeError(q: ColorQuantizeObj; a, b: ColorRGBX): ColorQuantizeError</a></li>
+  <li><a class="reference" href="#quantizeError%2CIntQuantizerObj%2Cint%2Cint"
+    title="quantizeError(q: IntQuantizerObj; a, b: int): int">quantizeError(q: IntQuantizerObj; a, b: int): int</a></li>
 
   </ul>
 
@@ -150,7 +154,15 @@ window.addEventListener('DOMContentLoaded', main);
 <dt><pre><a href="quantizer.html#ColorQuantizer"><span class="Identifier">ColorQuantizer</span></a> <span class="Other">=</span> <span class="Other">(</span><span class="Other">)</span></pre></dt>
 <dd>
 
+Quantizer that uses chroma to support RGB values
 
+</dd>
+</div>
+<div id="IntQuantizer">
+<dt><pre><a href="quantizer.html#IntQuantizer"><span class="Identifier">IntQuantizer</span></a> <span class="Other">=</span> <span class="Other">(</span><span class="Other">)</span></pre></dt>
+<dd>
+
+Quantizer that uses integers to represent a gray scale
 
 </dd>
 </div>
@@ -203,6 +215,14 @@ window.addEventListener('DOMContentLoaded', main);
 
 </dd>
 </div>
+<div id="quantizeError,IntQuantizerObj,int,int">
+<dt><pre><span class="Keyword">proc</span> <a href="#quantizeError%2CIntQuantizerObj%2Cint%2Cint"><span class="Identifier">quantizeError</span></a><span class="Other">(</span><span class="Identifier">q</span><span class="Other">:</span> <span class="Identifier">IntQuantizerObj</span><span class="Other">;</span> <span class="Identifier">a</span><span class="Other">,</span> <span class="Identifier">b</span><span class="Other">:</span> <span class="Identifier">int</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">int</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+<dd>
+
+
+
+</dd>
+</div>
 
 </dl></div>
 
@@ -213,7 +233,7 @@ window.addEventListener('DOMContentLoaded', main);
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br/>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2024-02-03 03:41:08 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2024-02-03 20:49:25 UTC</small>
       </div>
     </div>
   </div>

@@ -1,6 +1,8 @@
 ColorQuantizer	dither/quantizer.html#ColorQuantizer	quantizer: ColorQuantizer	
+IntQuantizer	dither/quantizer.html#IntQuantizer	quantizer: IntQuantizer	
 quantizeError	dither/quantizer.html#quantizeError,ColorQuantizeObj,ColorRGBX,ColorRGBX	quantizer: quantizeError(q: ColorQuantizeObj; a, b: ColorRGBX): ColorQuantizeError	
 `*`	dither/quantizer.html#*,ColorQuantizeError,int	quantizer: `*`(error: ColorQuantizeError; scalar: int): ColorQuantizeError	
 `div`	dither/quantizer.html#div,ColorQuantizeError,int	quantizer: `div`(error: ColorQuantizeError; scalar: int): ColorQuantizeError	
 `+`	dither/quantizer.html#+,ColorQuantizeError,ColorQuantizeError	quantizer: `+`(a, b: ColorQuantizeError): ColorQuantizeError	
 `+`	dither/quantizer.html#+,ColorRGBX,ColorQuantizeError	quantizer: `+`(color: ColorRGBX; error: ColorQuantizeError): ColorRGBX	
+quantizeError	dither/quantizer.html#quantizeError,IntQuantizerObj,int,int	quantizer: quantizeError(q: IntQuantizerObj; a, b: int): int	
