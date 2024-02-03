@@ -12,7 +12,7 @@ suite "Ordered dithering":
             intArray[10](0..255),
         )
 
-        img.orderedDither(output, BlackAndWhite(), Bayer2x2)
+        img.orderedDither(output, BlackAndWhiteIntPalette, Bayer2x2)
 
         check(output == [
             [ 0, 0, 0, 255, 0, 255, 255, 255, 255, 255],
@@ -33,7 +33,7 @@ suite "Ordered dithering":
             intArray[20](0..255),
         )
 
-        img.orderedDither(output, BlackAndWhite(), Bayer4x4)
+        img.orderedDither(output, BlackAndWhiteIntPalette, Bayer4x4)
 
         check(output == [
             [  0, 0, 0, 0, 0, 255, 0, 255, 0, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
@@ -52,7 +52,7 @@ suite "Ordered dithering":
             intArray[10](0..100).toSeq.mapIt(intArray[20](it..(it + 128)))
         )
 
-        img.orderedDither(output, BlackAndWhite(), Bayer8x8)
+        img.orderedDither(output, BlackAndWhiteIntPalette, Bayer8x8)
 
         check(output == [
             [ 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 255, 0, 255, 0, 255, 0, 255, 255, 255],

@@ -8,7 +8,7 @@ suite "Error diffusion dithering":
     test "Can perform Floyd Steinberg dithering":
         var output = newOutput[20, int]()
 
-        errorDiffusionDither(img, output, BlackAndWhite(), IntQuantizer(), FloydSteinberg)
+        errorDiffusionDither(img, output, BlackAndWhiteIntPalette, IntQuantizer, FloydSteinberg)
 
         check(output == [
             [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 255, 0, 255, 0, 255],
@@ -26,7 +26,7 @@ suite "Error diffusion dithering":
     test "Can perform Jarvis, Judice, and Ninke dithering":
         var output = newOutput[20, int]()
 
-        errorDiffusionDither(img, output, BlackAndWhite(), IntQuantizer(), JarvisJudiceNinke)
+        errorDiffusionDither(img, output, BlackAndWhiteIntPalette, IntQuantizer, JarvisJudiceNinke)
 
         check(output == [
             [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 255, 0],
@@ -44,7 +44,7 @@ suite "Error diffusion dithering":
     test "Can perform Stucki dithering":
         var output = newOutput[20, int]()
 
-        errorDiffusionDither(img, output, BlackAndWhite(), IntQuantizer(), Stucki)
+        errorDiffusionDither(img, output, BlackAndWhiteIntPalette, IntQuantizer, Stucki)
 
         check(output == [
             [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 255, 0],
@@ -62,7 +62,7 @@ suite "Error diffusion dithering":
     test "Can perform Atkinson dithering":
         var output = newOutput[20, int]()
 
-        errorDiffusionDither(img, output, BlackAndWhite(), IntQuantizer(), Atkinson)
+        errorDiffusionDither(img, output, BlackAndWhiteIntPalette, IntQuantizer, Atkinson)
 
         check(output == [
             [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 255],
@@ -80,7 +80,7 @@ suite "Error diffusion dithering":
     test "Can perform Burkes dithering":
         var output = newOutput[20, int]()
 
-        errorDiffusionDither(img, output, BlackAndWhite(), IntQuantizer(), Burkes)
+        errorDiffusionDither(img, output, BlackAndWhiteIntPalette, IntQuantizer, Burkes)
 
         check(output == [
             [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 255, 0, 255, 0],

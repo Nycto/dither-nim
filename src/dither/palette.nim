@@ -5,7 +5,13 @@ type
         ## A palette made of explicit colors
         colors: seq[ColorRGBX]
 
+    BlackAndWhiteIntPaletteObj = object
+
+const BlackAndWhiteIntPalette* = BlackAndWhiteIntPaletteObj()
+    ## A palette that uses integers to represent shades of gray, but the output palette is only black and white
+
 proc palette*(colors: varargs[ColorRGBX]): FixedPalette =
+    ## Creates a palette from the given set of colors
     FixedPalette(colors: colors.toSeq)
 
 proc nearestColor*(palette: FixedPalette, color: ColorRGBX): ColorRGBX =
@@ -36,4 +42,11 @@ proc `+`(a: uint8, b: SomeInteger): uint8 = clamp(a.int + b.int, 0, 255).uint8
 proc `+`*(color: ColorRGBX, scalar: int): ColorRGBX =
     ## Add a scalar value to a color
     result = rgbx(color.r + scalar, color.g + scalar, color.b + scalar, color.a)
+
+proc nearestColor*(palette: BlackAndWhiteIntPaletteObj, color: int): int =
+    ## Returns black or white, whichever is closest
+    return if color > 128: 255 else: 0
+
+proc approxMaxColorDistance*(palette: BlackAndWhiteIntPaletteObj): int = 128
+    ## Returns the maximum distance between colors
 
