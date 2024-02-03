@@ -1,5 +1,5 @@
-import dither/[ordered, types, palette, diffusion, quantizer, matrix]
-export ordered, types, palette, diffusion, quantizer, matrix
+import dither/[ordered, types, palette, diffusion, quantizer, algorithms]
+export ordered, types, palette, diffusion, quantizer, algorithms
 
 proc dither*(input: InputImage, output: var OutputImage, algorithm: DitherModes, palette: Palette) =
     ## Applies the a dithering algorithm to `input` and writes it to `output`
