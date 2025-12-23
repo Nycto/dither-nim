@@ -1,12 +1,15 @@
-import sequtils, chroma, std/algorithm
+import sequtils, chroma, std/algorithm, math
 
 type
   FixedPalette* = ref object ## A palette made of explicit colors
     colors: seq[ColorRGBX]
 
-  BlackAndWhiteIntPaletteObj = object
+  GreyScalePalette* = distinct uint8
 
-const BlackAndWhiteIntPalette* = BlackAndWhiteIntPaletteObj()
+proc newGreyScalePalette*(numberOfShades: SomeInteger): GreyScalePalette =
+  GreyScalePalette(numberOfShades.uint8)
+
+const BlackAndWhiteIntPalette* = newGreyScalePalette(2)
   ## A palette that uses integers to represent shades of gray, but the output palette is only black and white
 
 proc palette*(colors: varargs[ColorRGBX]): FixedPalette =
@@ -43,10 +46,13 @@ proc `+`*(color: ColorRGBX, scalar: int): ColorRGBX =
   ## Add a scalar value to a color
   result = rgbx(color.r + scalar, color.g + scalar, color.b + scalar, color.a)
 
-proc nearestColor*(palette: BlackAndWhiteIntPaletteObj, color: int): int =
-  ## Returns black or white, whichever is closest
-  return if color > 128: 255 else: 0
+proc nearestColor*(palette: GreyScalePalette, color: int): int =
+  ## Returns the nearest shade of grey that's in a given palette
+  let shadesOfGreyInPalette = palette.uint8.int - 1
+  let step = 255 div shadesOfGreyInPalette
+  let nearestStep = (color + (step div 2)) div step
+  return clamp(nearestStep, 0, shadesOfGreyInPalette) * step
 
-proc approxMaxColorDistance*(palette: BlackAndWhiteIntPaletteObj): int =
+proc approxMaxColorDistance*(palette: GreyScalePalette): int =
   ## Returns the maximum distance between colors
-  128
+  256 div palette.uint8.int
