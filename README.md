@@ -1,4 +1,8 @@
 # dither-nim
+
+[![Build](https://github.com/Nycto/dither-nim/actions/workflows/build.yml/badge.svg)](https://github.com/Nycto/dither-nim/actions/workflows/build.yml)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/Nycto/dither-nim/blob/main/LICENSE.md)
+
 Dithering algorithms implemented in Nim
 
 ## API
