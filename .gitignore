@@ -16,3 +16,4 @@ profile_results.txt
 docs
 *.idx
 *.css
+bin/dither_img

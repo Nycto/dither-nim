@@ -3,7 +3,7 @@ import chroma
 type
   ColorQuantizeObj = object
 
-  ColorQuantizeError = object
+  ColorQuantizeError* = object
     red, green, blue: int
 
   IntQuantizerObj = object
