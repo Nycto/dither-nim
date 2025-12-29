@@ -1,8 +1,12 @@
 import dither/[ordered, types, palette, diffusion, quantizer, algorithms]
 export ordered, types, palette, diffusion, quantizer, algorithms
 
-proc dither*(
-    input: InputImage, output: var OutputImage, algorithm: DitherModes, palette: Palette
+proc dither*[Color, Error](
+  input: InputImage[Color],
+  output: var OutputImage[Color],
+  algorithm: DitherModes,
+  palette: Palette[Color],
+  quantizer: Quantizer[Color, Error]
 ) =
   ## Applies the a dithering algorithm to `input` and writes it to `output`
   case algorithm
@@ -13,12 +17,18 @@ proc dither*(
   of DitherModes.Bayer8x8:
     input.orderedDither(output, palette, Bayer8x8)
   of DitherModes.FloydSteinberg:
-    input.errorDiffusionDither(output, palette, ColorQuantizer, FloydSteinberg)
+    input.errorDiffusionDither(output, palette, quantizer, FloydSteinberg)
   of DitherModes.JarvisJudiceNinke:
-    input.errorDiffusionDither(output, palette, ColorQuantizer, JarvisJudiceNinke)
+    input.errorDiffusionDither(output, palette, quantizer, JarvisJudiceNinke)
   of DitherModes.Stucki:
-    input.errorDiffusionDither(output, palette, ColorQuantizer, Stucki)
+    input.errorDiffusionDither(output, palette, quantizer, Stucki)
   of DitherModes.Atkinson:
-    input.errorDiffusionDither(output, palette, ColorQuantizer, Atkinson)
+    input.errorDiffusionDither(output, palette, quantizer, Atkinson)
   of DitherModes.Burkes:
-    input.errorDiffusionDither(output, palette, ColorQuantizer, Burkes)
+    input.errorDiffusionDither(output, palette, quantizer, Burkes)
+
+proc dither*[Color](
+    input: InputImage[Color], output: var OutputImage[Color], algorithm: DitherModes, palette: Palette[Color]
+) =
+  ## Applies the a dithering algorithm to `input` and writes it to `output`
+  dither(input, output, algorithm, ColorQuantizer, palette)
