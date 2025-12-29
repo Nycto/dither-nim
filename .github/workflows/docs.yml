@@ -11,11 +11,12 @@ jobs:
       contents: write
     container: nimlang/nim
     steps:
-    - uses: actions/checkout@v3
-    - run: nimble -y doc --index:on --out:docs --project src/dither.nim
-    - run: cp docs/dither.html docs/index.html
-    - name: Deploy documents
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: docs
+      - uses: actions/checkout@v3
+      - run: git config --global --add safe.directory "$(pwd)"
+      - run: nimble -y doc --index:on --out:docs --project src/dither.nim
+      - run: cp docs/dither.html docs/index.html
+      - name: Deploy documents
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs
