@@ -1,8 +1,13 @@
-FixedPalette	dither/palette.html#FixedPalette	palette: FixedPalette	
-BlackAndWhiteIntPalette	dither/palette.html#BlackAndWhiteIntPalette	palette: BlackAndWhiteIntPalette	
-palette	dither/palette.html#palette,varargs[ColorRGBX]	palette: palette(colors: varargs[ColorRGBX]): FixedPalette	
-nearestColor	dither/palette.html#nearestColor,FixedPalette,ColorRGBX	palette: nearestColor(palette: FixedPalette; color: ColorRGBX): ColorRGBX	
-approxMaxColorDistance	dither/palette.html#approxMaxColorDistance,FixedPalette	palette: approxMaxColorDistance(palette: FixedPalette): int	
-`+`	dither/palette.html#+,ColorRGBX,int	palette: `+`(color: ColorRGBX; scalar: int): ColorRGBX	
-nearestColor	dither/palette.html#nearestColor,BlackAndWhiteIntPaletteObj,int	palette: nearestColor(palette: BlackAndWhiteIntPaletteObj; color: int): int	
-approxMaxColorDistance	dither/palette.html#approxMaxColorDistance,BlackAndWhiteIntPaletteObj	palette: approxMaxColorDistance(palette: BlackAndWhiteIntPaletteObj): int	
+nimTitle	palette	dither/palette.html	module src/dither/palette		0
+nim	FixedPalette	dither/palette.html#FixedPalette	type FixedPalette		4
+nim	GreyScalePalette	dither/palette.html#GreyScalePalette	type GreyScalePalette		7
+nim	newGreyScalePalette	dither/palette.html#newGreyScalePalette,SomeInteger	proc newGreyScalePalette(numberOfShades: SomeInteger): GreyScalePalette		9
+nim	BlackAndWhiteIntPalette	dither/palette.html#BlackAndWhiteIntPalette	const BlackAndWhiteIntPalette		12
+nim	palette	dither/palette.html#palette,varargs[ColorRGBX]	proc palette(colors: varargs[ColorRGBX]): FixedPalette		15
+nim	nearestColor	dither/palette.html#nearestColor,FixedPalette,ColorRGBX	proc nearestColor(palette: FixedPalette; color: ColorRGBX): ColorRGBX		19
+nim	approxMaxColorDistance	dither/palette.html#approxMaxColorDistance,FixedPalette	proc approxMaxColorDistance(palette: FixedPalette): int		34
+nim	`+`	dither/palette.html#+,ColorRGBX,int	proc `+`(color: ColorRGBX; scalar: int): ColorRGBX		45
+nim	nearestColor	dither/palette.html#nearestColor,GreyScalePalette,int	proc nearestColor(palette: GreyScalePalette; color: int): int		49
+nim	approxMaxColorDistance	dither/palette.html#approxMaxColorDistance,GreyScalePalette	proc approxMaxColorDistance(palette: GreyScalePalette): int		56
+nimgrp	approxmaxcolordistance	dither/palette.html#approxMaxColorDistance-procs-all	proc		34
+nimgrp	nearestcolor	dither/palette.html#nearestColor-procs-all	proc		19

@@ -1,8 +1,12 @@
-ColorQuantizer	dither/quantizer.html#ColorQuantizer	quantizer: ColorQuantizer	
-IntQuantizer	dither/quantizer.html#IntQuantizer	quantizer: IntQuantizer	
-quantizeError	dither/quantizer.html#quantizeError,ColorQuantizeObj,ColorRGBX,ColorRGBX	quantizer: quantizeError(q: ColorQuantizeObj; a, b: ColorRGBX): ColorQuantizeError	
-`*`	dither/quantizer.html#*,ColorQuantizeError,int	quantizer: `*`(error: ColorQuantizeError; scalar: int): ColorQuantizeError	
-`div`	dither/quantizer.html#div,ColorQuantizeError,int	quantizer: `div`(error: ColorQuantizeError; scalar: int): ColorQuantizeError	
-`+`	dither/quantizer.html#+,ColorQuantizeError,ColorQuantizeError	quantizer: `+`(a, b: ColorQuantizeError): ColorQuantizeError	
-`+`	dither/quantizer.html#+,ColorRGBX,ColorQuantizeError	quantizer: `+`(color: ColorRGBX; error: ColorQuantizeError): ColorRGBX	
-quantizeError	dither/quantizer.html#quantizeError,IntQuantizerObj,int,int	quantizer: quantizeError(q: IntQuantizerObj; a, b: int): int	
+nimTitle	quantizer	dither/quantizer.html	module src/dither/quantizer		0
+nim	ColorQuantizeError	dither/quantizer.html#ColorQuantizeError	object ColorQuantizeError		6
+nim	ColorQuantizer	dither/quantizer.html#ColorQuantizer	const ColorQuantizer		11
+nim	IntQuantizer	dither/quantizer.html#IntQuantizer	const IntQuantizer		14
+nim	quantizeError	dither/quantizer.html#quantizeError,ColorQuantizeObj,ColorRGBX,ColorRGBX	proc quantizeError(q: ColorQuantizeObj; a, b: ColorRGBX): ColorQuantizeError		17
+nim	`*`	dither/quantizer.html#*,ColorQuantizeError,int	proc `*`(error: ColorQuantizeError; scalar: int): ColorQuantizeError		22
+nim	`div`	dither/quantizer.html#div,ColorQuantizeError,int	proc `div`(error: ColorQuantizeError; scalar: int): ColorQuantizeError		27
+nim	`+`	dither/quantizer.html#+,ColorQuantizeError,ColorQuantizeError	proc `+`(a, b: ColorQuantizeError): ColorQuantizeError		34
+nim	`+`	dither/quantizer.html#+,ColorRGBX,ColorQuantizeError	proc `+`(color: ColorRGBX; error: ColorQuantizeError): ColorRGBX		42
+nim	quantizeError	dither/quantizer.html#quantizeError,IntQuantizerObj,int,int	proc quantizeError(q: IntQuantizerObj; a, b: int): int		45
+nimgrp	+	dither/quantizer.html#+-procs-all	proc		34
+nimgrp	quantizeerror	dither/quantizer.html#quantizeError-procs-all	proc		17

@@ -1,15 +1,16 @@
-DiffusionMatrix	dither/algorithms.html#DiffusionMatrix	algorithms: DiffusionMatrix	
-ThresholdMatrix	dither/algorithms.html#ThresholdMatrix	algorithms: ThresholdMatrix	
-Bayer2x2	dither/algorithms.html#Bayer2x2	algorithms: Bayer2x2	
-Bayer4x4	dither/algorithms.html#Bayer4x4	algorithms: Bayer4x4	
-Bayer8x8	dither/algorithms.html#Bayer8x8	algorithms: Bayer8x8	
-FloydSteinberg	dither/algorithms.html#FloydSteinberg	algorithms: FloydSteinberg	
-JarvisJudiceNinke	dither/algorithms.html#JarvisJudiceNinke	algorithms: JarvisJudiceNinke	
-Stucki	dither/algorithms.html#Stucki	algorithms: Stucki	
-Atkinson	dither/algorithms.html#Atkinson	algorithms: Atkinson	
-Burkes	dither/algorithms.html#Burkes	algorithms: Burkes	
-maxThreshold	dither/algorithms.html#maxThreshold,ThresholdMatrix[N]	algorithms: maxThreshold[N: static int](thresholds: ThresholdMatrix[N]): int	
-threshold	dither/algorithms.html#threshold,ThresholdMatrix[N],int,int	algorithms: threshold[N: static int](thresholds: ThresholdMatrix[N]; x, y: int): int	
-rows	dither/algorithms.html#rows,DiffusionMatrix[Rows,Cols]	algorithms: rows[Rows: static int; Cols: static int](matrix: DiffusionMatrix[Rows, Cols]): int	
-columns	dither/algorithms.html#columns,DiffusionMatrix[Rows,Cols]	algorithms: columns[Rows: static int; Cols: static int](matrix: DiffusionMatrix[Rows, Cols]): int	
-numerator	dither/algorithms.html#numerator,DiffusionMatrix[Rows,Cols],int,int	algorithms: numerator[Rows: static int; Cols: static int](\n    matrix: DiffusionMatrix[Rows, Cols]; row, column: int): int	
+nimTitle	algorithms	dither/algorithms.html	module src/dither/algorithms		0
+nim	DiffusionMatrix	dither/algorithms.html#DiffusionMatrix	object DiffusionMatrix		2
+nim	ThresholdMatrix	dither/algorithms.html#ThresholdMatrix	type ThresholdMatrix		8
+nim	Bayer2x2	dither/algorithms.html#Bayer2x2	const Bayer2x2		16
+nim	Bayer4x4	dither/algorithms.html#Bayer4x4	const Bayer4x4		18
+nim	Bayer8x8	dither/algorithms.html#Bayer8x8	const Bayer8x8		21
+nim	FloydSteinberg	dither/algorithms.html#FloydSteinberg	const FloydSteinberg		32
+nim	JarvisJudiceNinke	dither/algorithms.html#JarvisJudiceNinke	const JarvisJudiceNinke		35
+nim	Stucki	dither/algorithms.html#Stucki	const Stucki		39
+nim	Atkinson	dither/algorithms.html#Atkinson	const Atkinson		42
+nim	Burkes	dither/algorithms.html#Burkes	const Burkes		45
+nim	maxThreshold	dither/algorithms.html#maxThreshold,ThresholdMatrix[N]	proc maxThreshold[N: static int](thresholds: ThresholdMatrix[N]): int		48
+nim	threshold	dither/algorithms.html#threshold,ThresholdMatrix[N],int,int	proc threshold[N: static int](thresholds: ThresholdMatrix[N]; x, y: int): int		51
+nim	rows	dither/algorithms.html#rows,DiffusionMatrix[Rows,Cols]	proc rows[Rows: static int; Cols: static int](matrix: DiffusionMatrix[Rows, Cols]): int		54
+nim	columns	dither/algorithms.html#columns,DiffusionMatrix[Rows,Cols]	proc columns[Rows: static int; Cols: static int](matrix: DiffusionMatrix[Rows, Cols]): int		60
+nim	numerator	dither/algorithms.html#numerator,DiffusionMatrix[Rows,Cols],int,int	proc numerator[Rows: static int; Cols: static int](\n    matrix: DiffusionMatrix[Rows, Cols]; row, column: int): int		66

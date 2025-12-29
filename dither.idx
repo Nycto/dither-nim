@@ -1,1 +1,2 @@
-dither	dither.html#dither,InputImage,OutputImage,DitherModes,Palette	dither: dither(input: InputImage; output: var OutputImage; algorithm: DitherModes;\n       palette: Palette)	
+nimTitle	dither	dither.html	module src/dither		0
+nim	dither	dither.html#dither,InputImage[Color],OutputImage[Color],DitherModes,Palette[Color],Quantizer[Color,Error]	proc dither[Color, Error](input: InputImage[Color]; output: var OutputImage[Color];\n                     algorithm: DitherModes; palette: Palette[Color];\n                     quantizer: Quantizer[Color, Error])		4

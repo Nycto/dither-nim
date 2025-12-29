@@ -1,4 +1,5 @@
-Palette	dither/types.html#Palette	types: Palette	
-InputImage	dither/types.html#InputImage	types: InputImage	
-OutputImage	dither/types.html#OutputImage	types: OutputImage	
-DitherModes	dither/types.html#DitherModes	types: DitherModes	
+nimTitle	types	dither/types.html	module src/dither/types		0
+nim	Palette	dither/types.html#Palette	type Palette		2
+nim	InputImage	dither/types.html#InputImage	type InputImage		8
+nim	OutputImage	dither/types.html#OutputImage	type OutputImage		16
+nim	DitherModes	dither/types.html#DitherModes	enum DitherModes		21

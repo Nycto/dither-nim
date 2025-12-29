@@ -1,2 +1,3 @@
-Thresholds	dither/ordered.html#Thresholds	ordered: Thresholds	
-orderedDither	dither/ordered.html#orderedDither,InputImage[P],OutputImage[P],Palette[P],Thresholds	ordered: orderedDither[P](input: InputImage[P]; output: var OutputImage[P];\n                 palette: Palette[P]; thresholds: Thresholds)	
+nimTitle	ordered	dither/ordered.html	module src/dither/ordered		0
+nim	Thresholds	dither/ordered.html#Thresholds	type Thresholds		3
+nim	orderedDither	dither/ordered.html#orderedDither,InputImage[P],OutputImage[P],Palette[P],Thresholds	proc orderedDither[P](input: InputImage[P]; output: var OutputImage[P];\n                 palette: Palette[P]; thresholds: Thresholds)		9
